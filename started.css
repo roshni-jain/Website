@@ -1,0 +1,24 @@
+
+    
+h1 {color: darksalmon}
+h1 {text-align: center}
+
+  body { background-color:oldlace;}
+  #container {
+    background-color:lightpink;
+    width:810px;
+    overflow:auto;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5px;   
+ }  
+ img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+   
+
+

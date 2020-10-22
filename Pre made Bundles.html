@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+    
+        
+    <script src = "bundle.js"></script>
+    <link rel="stylesheet" href="bundle.css">
+
+    
+</head>
+<body>
+    <div id="container">
+        <div id="logo">Price your Bundle</div>
+
+    <header>
+    <nav>
+        <ul>
+           <button onclick="window.location.href = 'index.html';">Home</button>
+             <button onclick="window.location.href = 'Get Started.html';">Get Started</button>
+             <button onclick="window.location.href = 'About Us.html';">About Us</button>
+             <button onclick="window.location.href = 'Contact.html';">Contact</button>
+             <button onclick="window.location.href = 'Pre made Bundles.html';">Pre Made Bundles</button>
+             <button onclick="window.location.href = 'Testimonials.html';">Testimonials</button>
+        </ul>
+ </nav>
+    </header>
+        
+        <p>The current time on your computer is: <span id="clock"></span></p>
+    
+
+    <form action = "">
+      <h3> Bundle 6.0 is a table which comprises of subscirptions that are available for 6 months. Bundle 12.0 is a table which comprises of  subscriptions that are available for a year. Please put the amount of account you need from each category.  </h3>
+<!-- A bordered table for item orders -->
+        
+        
+        <div id="left">
+             <div id="logoo">Bundle 6.0</div>
+<table border = "border">
+<!-- First, the column headings --> 
+       <tr>
+           <th>Category</th>
+          <th> Subscription</th>
+          <th> Price </th>
+          <th> Account Quantity </th>
+        </tr>
+<!-- Now, the table data entries -->
+        <tr>
+             <td rowspan="3"> Fitness</td>
+          <th> Fablethics  </th>
+          <td> $24.49 </td>
+          <td> <input type = "text"  id = "fab" size ="2"> </td>
+        </tr>
+        <tr>
+          <th> Lululemon </th>
+          <td> $50.95 </td>
+          <td> <input type = "text"  id = "lulu" size = "2"> </td>
+        </tr> 
+        <tr>
+          <th> Ascics </th>
+          <td> $45.50 </td>
+          <td> <input type = "text"  id = "kicks" size = "2"></td>
+        </tr>
+    <!--new cateegory-->
+    <tr>
+             <td rowspan="3"> Game Consoles</td>
+          <th> Playstation  </th>
+          <td> $20.00 </td>
+          <td> <input type = "text"  id = "play" size ="2"> </td>
+        </tr>
+        <tr>
+          <th> Xbox </th>
+          <td> $24.00 </td>
+          <td> <input type = "text"  id = "box" size = "2"> </td>
+        </tr> 
+        <tr>
+          <th> Nintendo </th>
+          <td> $14.50 </td>
+          <td> <input type = "text"  id = "tendo" size = "2"></td>
+        </tr>
+    <!--new cateegory-->
+    <tr>
+             <td rowspan="2"> Beauty</td>
+          <th> Boxy Charm </th>
+          <td> $10.00</td>
+          <td> <input type = "text"  id = "charm" size ="2"> </td>
+        </tr>
+        <tr>
+          <th> Ipsy </th>
+          <td> $7.50</td>
+          <td> <input type = "text"  id = "ipsy" size = "2"> </td>
+        </tr> 
+
+    <!--new cateegory-->
+    <tr>
+             <td rowspan="3"> Books</td>
+          <th> Kindle </th>
+          <td> $26.00 </td>
+          <td> <input type = "text"  id = "kindle" size ="2"> </td>
+        </tr>
+        <tr>
+          <th> Ereader </th>
+          <td> $12.00 </td>
+          <td> <input type = "text"  id = "reader" size = "2"> </td>
+        </tr> 
+        <tr>
+          <th> iBooks </th>
+          <td> $4.59 </td>
+          <td> <input type = "text"  id = "books" size = "2"></td>
+        </tr>
+
+        
+    
+      </table>
+       
+
+<!-- Button for precomputation of the total cost -->
+      <p>
+        <input type = "button"  value = "Total Cost" onclick="compCost()" >
+        <input type = "text"  size = "5"  id = "cost" onfocus="this.blur()">
+      </p>
+<!-- The submit and reset buttons -->
+<p>
+        <input type = "submit"  value = "Submit Order"> 
+        <input type = "reset"  value = "Clear Order Form">
+      </p>
+        </div>
+    </form>
+        
+         <div id="right">
+             <div id="lag">Bundle 12.0 </div>
+        <form action = "">
+            <table border = "border">
+<!-- First, the column headings --> 
+       <tr>
+           <th>Category</th>
+          <th> Subscription</th>
+          <th> Price </th>
+          <th> Account Quantity </th>
+        </tr>
+<!-- Now, the table data entries -->
+        <tr>
+             <td rowspan="3"> TV</td>
+          <th> Netflix </th>
+          <td> $5.50 </td>
+          <td> <input type = "text"  id = "netflix" size ="2"> </td>
+        </tr>
+        <tr>
+          <th> Hulu </th>
+          <td> $2.45 </td>
+          <td> <input type = "text"  id = "hulu" size = "2"> </td>
+        </tr> 
+        <tr>
+          <th> Apple</th>
+          <td> $3.40 </td>
+          <td> <input type = "text"  id = "apple" size = "2"></td>
+        </tr>
+    <!--new cateegory-->
+    <tr>
+             <td rowspan="3"> Music</td>
+          <th> Spotify</th>
+          <td> $3.40 </td>
+          <td> <input type = "text"  id = "spot" size ="2"> </td>
+        </tr>
+        <tr>
+          <th> Apple</th>
+          <td> $4.99 </td>
+          <td> <input type = "text"  id = "app" size = "2"> </td>
+        </tr> 
+        <tr>
+          <th> Sound Cloud </th>
+          <td> $6.50 </td>
+          <td> <input type = "text"  id = "cloud" size = "2"></td>
+        </tr>
+    <!--new cateegory-->
+    <tr>
+             <td rowspan="3"> Bath and Beauty</td>
+          <th> Dollar Club </th>
+          <td> $5.00 </td>
+          <td> <input type = "text"  id = "club" size ="2"> </td>
+        </tr>
+        <tr>
+          <th> Curology </th>
+          <td> $4.99 </td>
+          <td> <input type = "text"  id = "logy" size = "2"> </td>
+        </tr> 
+        <tr>
+          <th> Candles</th>
+          <td> $10.00 </td>
+          <td> <input type = "text"  id = "candles" size = "2"></td>
+        </tr>
+    <!--new cateegory-->
+    <tr>
+             <td rowspan="2"> Internet</td>
+          <th>Amazon Prime</th>
+          <td> $25.00 </td>
+          <td> <input type = "text"  id = "prime" size ="2"> </td>
+        </tr>
+        <tr>
+          <th> Spectrum</th>
+          <td> $15.00 </td>
+          <td> <input type = "text"  id = "trum" size = "2"> </td>
+        </tr> 
+
+    
+      </table>
+       
+
+<!-- Button for precomputation of the total cost -->
+      <p>
+        <input type = "button"  value = "Total Cost" onclick="compTotal()">
+        <input type = "text"  size = "5"  id = "total" onfocus="this.blur()">
+      </p>
+<!-- The submit and reset buttons -->
+<p>
+        <input type = "submit"  value = "Submit Order"> 
+        <input type = "reset"  value = "Clear Order Form">
+      </p>
+            
+            
+             </form>
+             
+    </div>
+    </div>
+
+    
+</body>
+</html>
